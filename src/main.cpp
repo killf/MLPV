@@ -1,6 +1,5 @@
-#include <stdio.h>
+#include "parser.hpp"
 
 int main() {
-	printf("Hello,world!");
-	return 0;
+	return yyparse();
 }

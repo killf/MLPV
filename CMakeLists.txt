@@ -13,5 +13,6 @@ ADD_FLEX_BISON_DEPENDENCY(lexer parser)
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 include_directories(${CMAKE_SOURCE_DIR})
+include_directories(${CMAKE_SOURCE_DIR}/src)
 
-add_executable(mlpv src/main.cpp ${FLEX_lexer_OUTPUTS} ${BISON_parser_OUTPUTS})
+add_executable(mlpv src/main.cpp ${FLEX_lexer_OUTPUTS} ${BISON_parser_OUTPUTS} src/funcs.hpp)
